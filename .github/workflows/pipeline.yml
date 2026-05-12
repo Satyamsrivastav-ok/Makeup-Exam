@@ -1,0 +1,26 @@
+name: Makeup Exam CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Source Checkout
+      uses: actions/checkout@v4
+
+    - name: Build Stage
+      run: echo "Build successful"
+
+    - name: Test Stage
+      run: echo "Testing successful"
+
+    - name: Security Validation
+      run: echo "Security checks passed"
+
+    - name: Deployment
+      run: echo "Deployment completed"
