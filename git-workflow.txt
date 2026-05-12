@@ -1,0 +1,1 @@
+Git branching workflow configured for development, staging, and production.
